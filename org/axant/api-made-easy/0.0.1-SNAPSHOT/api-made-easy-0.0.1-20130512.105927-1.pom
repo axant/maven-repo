@@ -1,0 +1,29 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.axant</groupId>
+	<artifactId>api-made-easy</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>API Made Easy</name>
+	<description>A java/android library intended to work easily with rest-like JSON API over HTTP</description>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.google.android</groupId>
+			<artifactId>android</artifactId>
+			<version>4.1.1.4</version>
+		</dependency>
+	</dependencies>
+
+	<properties>
+		<!--maven variable which points to your local repository -->
+		<internal.repo.path>file:///home/puria/src/mvn-repo/mvn-repo</internal.repo.path>
+	</properties>
+	<distributionManagement>
+		<repository>
+			<id>internal.repo</id>
+			<name>Internal Repository</name>
+			<url>${internal.repo.path}</url>
+		</repository>
+	</distributionManagement>
+</project>
